@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reversal</title>
+</head>
+<body>
+	<input type="text" id="text">
+	<button id="reversal">Reverse</button>
+	<div id="results"></div>
+
+<script type="text/javascript">
+
+	var button = document.getElementById("reversal");
+	var result = document.getElementById("results");
+
+	var reversals = function(string) {
+		result.innerHTML = string.split("").reverse().join("");
+	}
+
+	button.onclick = function() {
+		var input1 = document.getElementById("text").value;
+		reversals(input1);
+	}
+	
+</script>	
+</body>
+</html>
